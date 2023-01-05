@@ -1,0 +1,19 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# C_1uF-DiaSense
+#
+DEF C_1uF-DiaSense C 0 40 N Y 1 F N
+F0 "C" -90 0 39 V V C CNN
+F1 "C_1uF-DiaSense" 100 0 39 V V C CNN
+F2 "" 0 0 39 H I C CNN
+F3 "" 0 0 39 H I C CNN
+DRAW
+P 2 0 1 0 -60 -20 60 -20 N
+P 2 0 1 0 -60 20 60 20 N
+X ~ 1 0 100 79 D 39 39 1 1 P
+X ~ ~ 0 -100 79 U 39 39 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library

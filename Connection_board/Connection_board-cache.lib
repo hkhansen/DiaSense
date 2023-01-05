@@ -1,0 +1,161 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Connector_Generic_Conn_01x02
+#
+DEF Connector_Generic_Conn_01x02 J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Connector_Generic_Conn_01x02" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 50 50 -150 1 1 10 f
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# DiaSense_B06B
+#
+DEF DiaSense_B06B J 0 40 Y Y 1 F N
+F0 "J" -375 50 50 H V C CNN
+F1 "DiaSense_B06B" 300 50 50 H V C CNN
+F2 "" 39 -69 50 V I C CNN
+F3 "" 39 -69 50 V I C CNN
+DRAW
+S -425 -100 425 100 0 1 0 N
+X ~ 1 -375 -200 100 U 50 50 1 1 I
+X ~ 2 -225 -200 100 U 50 50 1 1 I
+X ~ 3 -75 -200 100 U 50 50 1 1 I
+X ~ 4 75 -200 100 U 50 50 1 1 I
+X ~ 5 225 -200 100 U 50 50 1 1 I
+X ~ 6 375 -200 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# DiaSense_B8B
+#
+DEF DiaSense_B8B J 0 40 Y Y 1 F N
+F0 "J" -50 250 50 H V C CNN
+F1 "DiaSense_B8B" 0 -250 50 H V C CNN
+F2 "DiaSense_Connectors:B8B" 0 -250 50 H I C CNN
+F3 "" 0 -250 50 H I C CNN
+DRAW
+S -100 200 100 -200 0 1 0 N
+X ~ 1 -200 150 100 R 50 50 1 1 P
+X ~ 2 -200 50 100 R 50 50 1 1 P
+X ~ 3 -200 -50 100 R 50 50 1 1 P
+X ~ 4 -200 -150 100 R 50 50 1 1 P
+X ~ 5 200 150 100 L 50 50 1 1 P
+X ~ 6 200 50 100 L 50 50 1 1 P
+X ~ 7 200 -50 100 L 50 50 1 1 P
+X ~ 8 200 -150 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# DiaSense_C_1uF
+#
+DEF DiaSense_C_1uF C 0 40 N Y 1 F N
+F0 "C" -90 0 39 V V C CNN
+F1 "DiaSense_C_1uF" 100 0 39 V V C CNN
+F2 "" 0 0 39 H I C CNN
+F3 "" 0 0 39 H I C CNN
+DRAW
+P 2 0 1 0 -60 -20 60 -20 N
+P 2 0 1 0 -60 20 60 20 N
+X ~ 1 0 100 79 D 39 39 1 1 P
+X ~ 2 0 -100 79 U 39 39 1 1 P
+ENDDRAW
+ENDDEF
+#
+# DiaSense_Coax_L
+#
+DEF DiaSense_Coax_L J 0 40 Y N 1 F N
+F0 "J" 0 125 50 H V C CNN
+F1 "DiaSense_Coax_L" -115 0 50 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ *BNC*
+ *SMA*
+ *SMB*
+ *SMC*
+ *Cinch*
+$ENDFPLIST
+DRAW
+A 1 0 71 1800 162 0 1 10 N -70 0 70 20
+A 2 0 71 -164 1800 0 1 10 N 70 -20 -70 0
+C 0 0 20 0 1 8 N
+P 2 0 1 0 0 -75 0 -105 N
+P 2 0 1 0 100 0 20 0 N
+X In 1 200 0 100 L 50 50 1 1 P
+X Ext 2 0 -200 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# DiaSense_R_1R
+#
+DEF DiaSense_R_1R R 0 40 N Y 1 F N
+F0 "R" -60 0 39 V V C CNN
+F1 "DiaSense_R_1R" 60 0 39 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 25 40 0 50 N
+P 5 0 1 0 25 0 -25 10 25 20 -25 30 25 40 N
+P 6 0 1 0 0 -50 25 -40 -25 -30 25 -20 -25 -10 25 0 N
+X ~ 1 0 100 50 D 35 35 1 1 P
+X ~ 2 0 -100 50 U 35 35 1 1 P
+ENDDRAW
+ENDDEF
+#
+# power_+3.3V
+#
+DEF power_+3.3V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+3.3V" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+ALIAS +3.3V
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +3V3 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_+5V
+#
+DEF power_+5V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+5V" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +5V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_GND
+#
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+#End Library

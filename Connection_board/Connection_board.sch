@@ -1,0 +1,246 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Label 5800 3600 2    50   ~ 0
+LE
+Text Label 5000 3500 0    50   ~ 0
+CLK
+Text Label 5800 3500 2    50   ~ 0
+DATA
+$Comp
+L power:GND #PWR08
+U 1 1 600925F8
+P 5200 3800
+F 0 "#PWR08" H 5200 3550 50  0001 C CNN
+F 1 "GND" H 5200 3660 50  0000 C CNN
+F 2 "" H 5200 3800 50  0001 C CNN
+F 3 "" H 5200 3800 50  0001 C CNN
+	1    5200 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR07
+U 1 1 600951EF
+P 6000 3700
+F 0 "#PWR07" H 6000 3550 50  0001 C CNN
+F 1 "+3.3V" H 6000 3835 50  0000 C CNN
+F 2 "" H 6000 3700 50  0001 C CNN
+F 3 "" H 6000 3700 50  0001 C CNN
+	1    6000 3700
+	1    0    0    -1  
+$EndComp
+Text Label 5200 3700 2    50   ~ 0
+Photodiode
+$Comp
+L power:+5V #PWR06
+U 1 1 60097614
+P 4850 3600
+F 0 "#PWR06" H 4850 3450 50  0001 C CNN
+F 1 "+5V" H 4845 3770 50  0000 C CNN
+F 2 "" H 4850 3600 50  0001 C CNN
+F 3 "" H 4850 3600 50  0001 C CNN
+	1    4850 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L DiaSense:Coax_L J1
+U 1 1 6008B437
+P 4170 4605
+F 0 "J1" H 4120 4745 50  0000 C CNN
+F 1 "Coax_L" H 3945 4435 50  0000 C CNN
+F 2 "DiaSense_Connectors:U.FL" H 4170 4605 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2691132.pdf" H 4170 4605 50  0001 C CNN
+	1    4170 4605
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 600901ED
+P 4170 4805
+F 0 "#PWR01" H 4170 4555 50  0001 C CNN
+F 1 "GND" H 4175 4632 50  0000 C CNN
+F 2 "" H 4170 4805 50  0001 C CNN
+F 3 "" H 4170 4805 50  0001 C CNN
+	1    4170 4805
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 60090AE6
+P 4570 4805
+F 0 "#PWR03" H 4570 4555 50  0001 C CNN
+F 1 "GND" H 4575 4632 50  0000 C CNN
+F 2 "" H 4570 4805 50  0001 C CNN
+F 3 "" H 4570 4805 50  0001 C CNN
+	1    4570 4805
+	1    0    0    -1  
+$EndComp
+$Comp
+L DiaSense:R_1R R1
+U 1 1 60091304
+P 4820 4605
+F 0 "R1" V 4775 4605 39  0000 C CNN
+F 1 "1R" V 4875 4605 39  0000 C CNN
+F 2 "DiaSense_Resistors:1632_R" H 4820 4605 50  0001 C CNN
+F 3 "https://www.koaglobal.com/-/media/Files/KOA_Global/EN/product/commonpdf/wk73s_high.pdf" H 4820 4605 50  0001 C CNN
+	1    4820 4605
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4920 4605 4970 4605
+$Comp
+L power:+3.3V #PWR05
+U 1 1 6009348C
+P 4970 4605
+F 0 "#PWR05" H 4970 4455 50  0001 C CNN
+F 1 "+3.3V" H 4985 4778 50  0000 C CNN
+F 2 "" H 4970 4605 50  0001 C CNN
+F 3 "" H 4970 4605 50  0001 C CNN
+	1    4970 4605
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4565 3700 5200 3700
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 6009CE7C
+P 4365 3700
+F 0 "J2" H 4365 3795 50  0000 C CNN
+F 1 "JST_2" H 4385 3505 39  0000 C CNN
+F 2 "DiaSense_Connectors:JST_2_pin" H 4365 3700 50  0001 C CNN
+F 3 "~" H 4365 3700 50  0001 C CNN
+	1    4365 3700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 600A1DB6
+P 4565 3800
+F 0 "#PWR02" H 4565 3550 50  0001 C CNN
+F 1 "GND" H 4565 3660 39  0000 C CNN
+F 2 "" H 4565 3800 50  0001 C CNN
+F 3 "" H 4565 3800 50  0001 C CNN
+	1    4565 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L DiaSense:B8B J3
+U 1 1 605B9FF4
+P 5400 3650
+F 0 "J3" H 5400 4025 50  0000 C CNN
+F 1 "B8B" H 5400 3934 50  0000 C CNN
+F 2 "DiaSense_Connectors:B8B" H 5400 3400 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1699380.pdf" H 5400 3400 50  0001 C CNN
+	1    5400 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L DiaSense:B06B J4
+U 1 1 605BC57F
+P 6800 3575
+F 0 "J4" V 6749 3703 50  0000 L CNN
+F 1 "BM06B" V 6840 3703 50  0000 L CNN
+F 2 "DiaSense_Connectors:BM06B" V 6839 3506 50  0001 C CNN
+F 3 "" V 6839 3506 50  0001 C CNN
+	1    6800 3575
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5800 3500 5600 3500
+Wire Wire Line
+	5600 3600 5800 3600
+Wire Wire Line
+	5000 3500 5200 3500
+$Comp
+L power:GND #PWR09
+U 1 1 605C791E
+P 5600 3800
+F 0 "#PWR09" H 5600 3550 50  0001 C CNN
+F 1 "GND" H 5600 3660 50  0000 C CNN
+F 2 "" H 5600 3800 50  0001 C CNN
+F 3 "" H 5600 3800 50  0001 C CNN
+	1    5600 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 3700 6000 3700
+Text Label 6400 3500 0    50   ~ 0
+DATA
+Text Label 6400 3650 0    50   ~ 0
+LE
+$Comp
+L power:GND #PWR011
+U 1 1 605C8B60
+P 6600 3950
+F 0 "#PWR011" H 6600 3700 50  0001 C CNN
+F 1 "GND" H 6600 3810 50  0000 C CNN
+F 2 "" H 6600 3950 50  0001 C CNN
+F 3 "" H 6600 3950 50  0001 C CNN
+	1    6600 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR010
+U 1 1 605C95E3
+P 6250 3800
+F 0 "#PWR010" H 6250 3650 50  0001 C CNN
+F 1 "+3.3V" H 6250 3935 50  0000 C CNN
+F 2 "" H 6250 3800 50  0001 C CNN
+F 3 "" H 6250 3800 50  0001 C CNN
+	1    6250 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 3800 6600 3800
+Wire Wire Line
+	6400 3650 6600 3650
+Wire Wire Line
+	6600 3500 6400 3500
+$Comp
+L DiaSense:C_1uF C1
+U 1 1 605CB17F
+P 4570 4705
+F 0 "C1" V 4480 4665 39  0000 L CNN
+F 1 "1uF" V 4670 4650 39  0000 L CNN
+F 2 "DiaSense_Capacitors:SMD_1608_C" H 4570 4705 39  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2237828.pdf" H 4570 4705 39  0001 C CNN
+	1    4570 4705
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4370 4605 4570 4605
+Connection ~ 4570 4605
+Wire Wire Line
+	4570 4605 4720 4605
+Wire Wire Line
+	6400 3350 6600 3350
+Text Label 6400 3350 0    50   ~ 0
+CLK
+Wire Wire Line
+	6600 3200 6500 3200
+$Comp
+L power:+5V #PWR04
+U 1 1 600946FC
+P 6500 3200
+F 0 "#PWR04" H 6500 3050 50  0001 C CNN
+F 1 "+5V" H 6495 3370 50  0000 C CNN
+F 2 "" H 6500 3200 50  0001 C CNN
+F 3 "" H 6500 3200 50  0001 C CNN
+	1    6500 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 3600 5200 3600
+$EndSCHEMATC

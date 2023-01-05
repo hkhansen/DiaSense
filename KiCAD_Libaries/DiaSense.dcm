@@ -1,0 +1,44 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ADF4351
+D Wideband Synthesizer with Integrated VCO
+F http://www.farnell.com/datasheets/2253112.pdf
+$ENDCMP
+#
+$CMP ASE-25
+D 25 MHz Crystal Clock Oscillator
+F http://www.farnell.com/datasheets/1883685.pdf
+$ENDCMP
+#
+$CMP B8B
+F http://www.farnell.com/datasheets/1699380.pdf
+$ENDCMP
+#
+$CMP BM06B
+F http://www.farnell.com/datasheets/2084393.pdf
+$ENDCMP
+#
+$CMP CFPS-73
+D 25 MHz Crystal Clock Oscillator
+F http://www.farnell.com/datasheets/2551800.pdf
+$ENDCMP
+#
+$CMP Coax_L
+F  ~
+$ENDCMP
+#
+$CMP Coax_R
+F  ~
+$ENDCMP
+#
+$CMP DB9
+F  ~
+$ENDCMP
+#
+$CMP OSD_15E
+D Photodiode
+K photodiode diode opto
+F ~
+$ENDCMP
+#
+#End Doc Library

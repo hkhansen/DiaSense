@@ -1,0 +1,189 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Arduino_Wire_terminal
+#
+DEF Arduino_Wire_terminal T 0 40 Y Y 1 F N
+F0 "T" -90 210 50 H V C CNN
+F1 "Arduino_Wire_terminal" 0 -220 50 H V C CNN
+F2 "" -100 0 50 H I C CNN
+F3 "" -100 0 50 H I C CNN
+DRAW
+S -100 -175 200 175 0 1 0 N
+X Con_1 1 -200 100 100 R 50 50 1 1 B
+X Con_2 2 -200 -100 100 R 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# Mouser_RS_100_pF
+#
+DEF Mouser_RS_100_pF C 0 40 Y Y 1 F N
+F0 "C" 0 100 50 H V C CNN
+F1 "Mouser_RS_100_pF" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -25 50 -25 -50 N
+P 2 0 1 0 25 -50 25 50 N
+X ~ 1 -125 0 100 R 50 50 1 1 I
+X ~ 2 125 0 100 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# Mouser_RS_10_nH
+#
+DEF Mouser_RS_10_nH L 0 40 Y Y 1 F N
+F0 "L" 0 75 50 H V C CNN
+F1 "Mouser_RS_10_nH" 0 -50 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+A -112 0 37 1 1799 0 1 0 N -75 0 -150 0
+A -37 0 37 1 1799 0 1 0 N 0 0 -75 0
+A 38 0 37 1 1799 0 1 0 N 75 0 0 0
+A 113 0 37 1 1799 0 1 0 N 150 0 75 0
+X ~ 1 -200 0 50 R 50 50 1 1 I
+X ~ 2 200 0 50 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# Mouser_RS_22_pF
+#
+DEF Mouser_RS_22_pF C 0 40 Y Y 1 F N
+F0 "C" 0 100 50 H V C CNN
+F1 "Mouser_RS_22_pF" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -25 50 -25 -50 N
+P 2 0 1 0 25 50 25 -50 N
+X ~ 1 -125 0 100 R 50 50 1 1 I
+X ~ 2 125 0 100 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# Mouser_RS_22_uF
+#
+DEF Mouser_RS_22_uF C 0 40 Y Y 1 F N
+F0 "C" 0 100 50 H V C CNN
+F1 "Mouser_RS_22_uF" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -25 -50 -25 50 N
+P 2 0 1 0 25 50 25 -50 N
+X ~ 1 -125 0 100 R 50 50 1 1 I
+X ~ 2 125 0 100 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# Mouser_RS_Conn_Coaxial_left
+#
+DEF Mouser_RS_Conn_Coaxial_left J 0 40 Y N 1 F N
+F0 "J" 0 125 50 H V C CNN
+F1 "Mouser_RS_Conn_Coaxial_left" -115 0 50 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ *BNC*
+ *SMA*
+ *SMB*
+ *SMC*
+ *Cinch*
+$ENDFPLIST
+DRAW
+A 1 0 71 1800 162 0 1 10 N -70 0 70 20
+A 2 0 71 -164 1800 0 1 10 N 70 -20 -70 0
+C 0 0 20 0 1 8 N
+P 2 0 1 0 0 -75 0 -105 N
+P 2 0 1 0 100 0 20 0 N
+X In 1 200 0 100 L 50 50 1 1 P
+X Ext 2 0 -200 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Mouser_RS_Conn_Coaxial_right
+#
+DEF Mouser_RS_Conn_Coaxial_right J 0 40 Y N 1 F N
+F0 "J" 10 120 50 H V C CNN
+F1 "Mouser_RS_Conn_Coaxial_right" 115 0 50 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ *BNC*
+ *SMA*
+ *SMB*
+ *SMC*
+ *Cinch*
+$ENDFPLIST
+DRAW
+A -2 0 71 1636 0 0 1 10 N -70 20 70 0
+A -1 0 71 0 -1638 0 1 10 N 70 0 -70 -20
+C 0 0 20 0 1 8 N
+P 2 0 1 0 -100 0 -20 0 N
+P 2 0 1 0 0 -100 0 -70 N
+X In 1 -200 0 100 R 50 50 1 1 P
+X Ext 2 0 -200 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Mouser_RS_PMA3-63GLN+
+#
+DEF Mouser_RS_PMA3-63GLN+ IC 0 30 Y Y 1 F N
+F0 "IC" 1450 700 50 H V L CNN
+F1 "Mouser_RS_PMA3-63GLN+" 1450 600 50 H V L CNN
+F2 "QFN51P300X300X89-13N" 1450 500 50 H I L CNN
+F3 "https://www.minicircuits.com/pdfs/PMA3-63GLN+.pdf" 1450 400 50 H I L CNN
+F4 "RF Amplifier MMIC WIDEBAND LOW NOISE AMPL" 1450 300 50 H I L CNN "Description"
+F5 "0.89" 1450 200 50 H I L CNN "Height"
+F6 "139-PMA3-63GLN" 1450 100 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Mini-Circuits/PMA3-63GLN%2b?qs=xZ%2FP%252Ba9zWqYWvIiwciLRTQ%3D%3D" 1450 0 50 H I L CNN "Mouser Price/Stock"
+F8 "Mini-Circuits" 1450 -100 50 H I L CNN "Manufacturer_Name"
+F9 "PMA3-63GLN+" 1450 -200 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 5 0 1 6 200 500 1400 500 1400 -600 200 -600 200 500 N
+X NC_1 1 0 0 200 R 50 50 0 0 P
+X NC_8 10 900 700 200 D 50 50 0 0 P
+X NC_9 11 800 700 200 D 50 50 0 0 P
+X NC_10 12 700 700 200 D 50 50 0 0 P
+X EP 13 600 700 200 D 50 50 0 0 P
+X RF-IN 2 0 -100 200 R 50 50 0 0 P
+X NC_2 3 0 -200 200 R 50 50 0 0 P
+X NC_3 4 700 -800 200 U 50 50 0 0 P
+X NC_4 5 800 -800 200 U 50 50 0 0 P
+X NC_5 6 900 -800 200 U 50 50 0 0 P
+X NC_6 7 1600 -200 200 L 50 50 0 0 P
+X RF-OUT&DC-IN 8 1600 -100 200 L 50 50 0 0 P
+X NC_7 9 1600 0 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# power_+5V
+#
+DEF power_+5V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+5V" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +5V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_GND
+#
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+#End Library

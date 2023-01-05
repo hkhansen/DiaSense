@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name DiaSense-rescue)(type Legacy)(uri ${KIPRJMOD}/DiaSense-rescue.lib)(options "")(descr ""))
+)

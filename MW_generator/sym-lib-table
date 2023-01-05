@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name MW_generator-rescue)(type Legacy)(uri ${KIPRJMOD}/MW_generator-rescue.lib)(options "")(descr ""))
+)
